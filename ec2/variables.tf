@@ -57,3 +57,8 @@ variable "vpc_security_group_ids" {
     description = {}
     default = []
 } 
+
+variable "volume_tags" {
+    description = {}
+    default = []
+}
