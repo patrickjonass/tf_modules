@@ -1,4 +1,4 @@
-variable "count" {
+variable "instance_count" {
     description = ""
     type = list(string)
     default = []
@@ -6,7 +6,6 @@ variable "count" {
 
 variable "ami" {
     description = ""
-    type = list(string)
     default = []
 }
 
@@ -16,67 +15,56 @@ variable "associate_public_ip_address" {
 }
 
 variable "availability_zone" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "ebs_block_device" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "iam_instance_profile" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "instance_type" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "key_name" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "root_block_device" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "subnet_id" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "tags" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "user_data" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
 
 variable "vpc_security_group_ids" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 } 
 
 variable "volume_tags" {
-    description = {}
-    type = list(string)
+    description = ""
     default = []
 }
