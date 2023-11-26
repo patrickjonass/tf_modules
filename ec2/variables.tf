@@ -6,17 +6,17 @@ variable "instance_count" {
 
 variable "ami" {
     description = ""
-    default = []
+    default = ""
 }
 
 variable "associate_public_ip_address" {
     description = ""
-    default = []
+    default = false
 }
 
 variable "availability_zone" {
     description = ""
-    default = []
+    default = ""
 }
 
 variable "ebs_block_device" {
@@ -26,7 +26,7 @@ variable "ebs_block_device" {
 
 variable "iam_instance_profile" {
     description = ""
-    default = []
+    default = ""
 }
 
 variable "instance_type" {
@@ -36,7 +36,7 @@ variable "instance_type" {
 
 variable "key_name" {
     description = ""
-    default = []
+    default = ""
 }
 
 variable "root_block_device" {
@@ -46,7 +46,7 @@ variable "root_block_device" {
 
 variable "subnet_id" {
     description = ""
-    type=map(string)
+    #type=map
     default = {}
 }
 
@@ -57,7 +57,7 @@ variable "tags" {
 
 variable "user_data" {
     description = ""
-    default = []
+    default = ""
 }
 
 variable "vpc_security_group_ids" {
@@ -67,5 +67,5 @@ variable "vpc_security_group_ids" {
 
 variable "volume_tags" {
     description = ""
-    default = []
+    default = {}
 }
