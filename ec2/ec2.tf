@@ -21,7 +21,7 @@ resource "aws_instance" "ec2" {
     subnet_id = var.subnet_id
 
     ## STORAGE
-    ebs_block_device = var.ebs_block_device
-    root_block_device = var.root_block_device
+    #ebs_block_device = var.ebs_block_device
+    #root_block_device = var.root_block_device
     volume_tags = var.volume_tags    
 }
